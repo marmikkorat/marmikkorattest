@@ -1,3 +1,13 @@
+// Smooth scroll
+document.querySelectorAll("a[href^='#']").forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href"))
+      .scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+// Scroll animation (cards)
 const cards = document.querySelectorAll(".card");
 
 const observer = new IntersectionObserver((entries) => {
