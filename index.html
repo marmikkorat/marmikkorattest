@@ -6,15 +6,78 @@
 
 <title>Marmik Korat | Operations Leader</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
 </head>
 
 <body>
 
-<div id="grid-bg"></div>
+<section id="contact" class="contact-section">
 
-<header class="navbar">
-  <div class="logo">marmik.korat()</div>
+  <!-- LEFT -->
+  <div class="contact-left">
+    <p class="section-tag">— 04 / contact</p>
 
-  <nav>
+    <h1>
+      Got a build in mind?<br>
+      <span>Let’s chat.</span>
+    </h1>
+
+    <p class="desc">
+      Always open to discussing ideas, improvements, and collaborations.
+    </p>
+
+    <div class="social-box">
+      <div class="social-card">
+        <span>LinkedIn</span>
+        <a href="#">@marmik-korat</a>
+      </div>
+      <div class="social-card">
+        <span>Email</span>
+        <a href="#">marmikkorat@gmail.com</a>
+      </div>
+      <div class="social-card">
+        <span>Phone</span>
+        <a href="#">+91 96244 62184</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT FORM -->
+  <div class="contact-right">
+    <form id="contact-form" class="form-box">
+
+      <p class="form-header">● new message — compose</p>
+
+      <div class="input-group">
+        <input type="text" name="name" required>
+        <label>Your Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" name="email" required>
+        <label>Your Email</label>
+      </div>
+
+      <div class="input-group">
+        <textarea name="message" required></textarea>
+        <label>Message</label>
+      </div>
+
+      <button type="submit" class="send-btn">
+        send_message()
+      </button>
+
+      <p id="form-status"></p>
+
+    </form>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
