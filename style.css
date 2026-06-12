@@ -3,15 +3,14 @@
   --card: #111827;
   --text: #e2e8f0;
   --muted: #94a3b8;
-  --accent: #38bdf8;
+  --accent: #10b981;
 }
 
 .light-mode {
-  --bg: #f8fafc;
-  --card: #ffffff;
+  --bg: #ffffff;
+  --card: #f1f5f9;
   --text: #0f172a;
   --muted: #475569;
-  --accent: #2563eb;
 }
 
 body {
@@ -21,106 +20,25 @@ body {
   color: var(--text);
 }
 
-/* SCROLL BAR */
-#progress-bar {
-  height: 4px;
-  background: var(--accent);
+/* GRID BACKGROUND */
+#grid-bg {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 0%;
-  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#1e293b 1px, transparent 1px),
+                    linear-gradient(90deg, #1e293b 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.2;
+  z-index: -1;
 }
 
-/* NAV */
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 18px 60px;
-  background: var(--card);
+  padding: 15px 50px;
 }
 
-/* BUTTON NAV */
 .navbar a {
-  margin-left: 15px;
-  padding: 8px 14px;
-  border-radius: 8px;
-  text-decoration: none;
+  margin-left: 20px;
   color: var(--muted);
-  transition: 0.3s;
-}
-
-.navbar a:hover {
-  background: var(--accent);
-  color: white;
-}
-
-#theme-toggle {
-  background: var(--accent);
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-}
-
-/* KPI */
-.kpi {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  padding: 40px;
-  gap: 20px;
-}
-
-.kpi-box {
-  background: var(--card);
-  padding: 25px;
-  border-radius: 12px;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.kpi-box:hover {
-  transform: translateY(-5px);
-}
-
-/* SECTION */
-.section {
-  padding: 60px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-/* CARD */
-.card {
-  background: var(--card);
-  padding: 25px;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  opacity: 0;
-  transform: translateY(50px);
-}
-
-/* SKILLS */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 15px;
-}
-
-.skill {
-  background: var(--card);
-  padding: 15px;
-  text-align: center;
-  border-radius: 8px;
-}
-
-/* FOOTER */
-footer {
