@@ -7,60 +7,74 @@
 }
 
 body {
+  margin: 0;
   font-family: 'Inter', sans-serif;
   background: var(--bg);
   color: var(--text);
 }
 
-/* CONTACT */
-.contact-section {
+/* GRID BACKGROUND */
+#grid-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#1e293b 1px, transparent 1px),
+                    linear-gradient(90deg, #1e293b 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+/* NAVBAR */
+.navbar {
   display: flex;
   justify-content: space-between;
-  padding: 100px 60px;
-  gap: 60px;
+  padding: 20px 60px;
 }
 
-/* LEFT */
-.contact-left h1 {
-  font-size: 48px;
+.navbar a {
+  margin-left: 20px;
+  color: var(--muted);
+  text-decoration: none;
 }
 
-.contact-left span {
+.navbar a:hover {
   color: var(--accent);
 }
 
-.desc {
-  margin-top: 15px;
+/* HERO */
+.hero {
+  padding: 100px 60px;
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+.subtitle {
   color: var(--muted);
 }
 
-/* SOCIAL */
-.social-card {
-  background: var(--card);
-  padding: 15px;
-  margin-top: 10px;
-  border-radius: 10px;
+/* CONTACT */
+.contact-section {
   display: flex;
-  justify-content: space-between;
-  border: 1px solid #1e293b;
-  transition: 0.3s;
+  gap: 60px;
+  padding: 80px 60px;
 }
 
-.social-card:hover {
-  transform: translateY(-3px);
-  border-color: var(--accent);
+.contact-left h1 span {
+  color: var(--accent);
 }
 
 /* FORM */
 .form-box {
   background: var(--card);
   padding: 25px;
-  border-radius: 12px;
-  border: 1px solid #1e293b;
+  border-radius: 10px;
   width: 400px;
 }
 
-/* FLOATING LABEL */
+/* INPUT */
 .input-group {
   position: relative;
   margin-top: 20px;
@@ -70,31 +84,27 @@ body {
 .input-group textarea {
   width: 100%;
   padding: 12px;
-  background: transparent;
   border: 1px solid #334155;
-  border-radius: 8px;
+  background: transparent;
   color: var(--text);
+  border-radius: 8px;
 }
 
 .input-group label {
   position: absolute;
-  left: 12px;
   top: 12px;
+  left: 12px;
   color: var(--muted);
   transition: 0.3s;
-  pointer-events: none;
 }
 
-/* FLOAT EFFECT */
 .input-group input:focus + label,
 .input-group input:valid + label,
 .input-group textarea:focus + label,
 .input-group textarea:valid + label {
   top: -8px;
-  left: 8px;
-  background: var(--card);
-  padding: 0 5px;
   font-size: 12px;
+  background: var(--card);
 }
 
 /* BUTTON */
@@ -104,17 +114,7 @@ body {
   padding: 12px;
   background: var(--accent);
   border: none;
+  color: white;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
-}
-
-.send-btn:hover {
-  transform: scale(1.05);
-}
-
-/* STATUS */
-#form-status {
-  margin-top: 10px;
-  font-size: 14px;
 }
