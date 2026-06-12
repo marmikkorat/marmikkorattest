@@ -1,14 +1,21 @@
-// THEME
-const toggle = documentOOTH SCROLLconst toggle = document.getElementById("theme-toggle");
-document.querySelectorAll("a[href^='#']").forEach(anchor => {
-  anchor.onclick = function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href"))
-      .scrollIntoView({ behavior: "smooth" });
-  };
+// INIT EMAILJS// INIT EMAILJS(e) {
+  e.preventDefault();
+
+  const status = document.getElementById("form-status");
+  status.innerText = "Sending...";
+
+  emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+    .then(() => {
+      status.innerText = "✅ Message Sent Successfully!";
+      this.reset();
+    })
+    .catch(() => {
+      status.innerText = "❌ Failed to send. Try again.";
+    });
 });
+``
+(function(){
+  emailjs.init("YOUR_PUBLIC_KEY"); // 🔥 replace this
+})();
 
-toggle.onclick = () => {
-  document.body.classList.toggle("light-mode");
-};
-
+// FORM SUBMIT
