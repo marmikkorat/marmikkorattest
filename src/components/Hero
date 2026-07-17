@@ -1,1 +1,127 @@
+import { motion } from "framer-motion";
 
+import Button from "./common/Button";
+import StatCard from "./common/StatCard";
+
+import { profile, stats } from "../data/portfolioData";
+
+function Hero() {
+  return (
+    <section id="hero" className="hero">
+
+      <div className="hero-blur hero-blur-left"></div>
+      <div className="hero-blur hero-blur-right"></div>
+
+      <div className="container hero-container">
+
+        <div className="hero-left">
+
+          <motion.p
+            className="hero-tag"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: .5 }}
+          >
+            Manufacturing • Operations • Leadership
+          </motion.p>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 25 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: .7 }}
+          >
+            {profile.name}
+          </motion.h1>
+
+          <motion.h2
+            className="hero-role"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: .2 }}
+          >
+            {profile.designation}
+          </motion.h2>
+
+          <motion.p
+            className="hero-headline"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: .4 }}
+          >
+            {profile.headline}
+          </motion.p>
+
+          <motion.div
+            className="hero-summary"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: .5 }}
+          >
+            {profile.summary.map((item, index) => (
+              <p key={index}>{item}</p>
+            ))}
+          </motion.div>
+
+          <motion.div
+            className="hero-buttons"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: .6 }}
+          >
+            <Button
+              href={profile.resume}
+              target="_blank"
+            >
+              Download Resume
+            </Button>
+
+            <Button
+              variant="outline"
+              href={profile.linkedin}
+              target="_blank"
+            >
+              LinkedIn
+            </Button>
+          </motion.div>
+
+        </div>
+
+        <motion.div
+          className="hero-right"
+          initial={{ opacity: 0, x: 80 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: .8 }}
+        >
+          <div className="hero-image">
+
+            <img
+              src={profile.image}
+              alt={profile.name}
+            />
+
+          </div>
+        </motion.div>
+
+      </div>
+
+      <div className="container">
+
+        <div className="hero-stats">
+
+          {stats.map((item, index) => (
+            <StatCard
+              key={index}
+              value={item.value}
+              label={item.label}
+            />
+          ))}
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+}
+
+export default Hero;
