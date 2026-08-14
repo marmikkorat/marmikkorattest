@@ -29,13 +29,13 @@ export const profile = {
   summary: [
     "A competent manufacturing professional with 10 years of experience specializing in strategic planning, operational excellence and manufacturing leadership.",
 
-    "Comprehensive knowledge of solar module manufacturing processes including greenfield projects, commissioning, production ramp-up, Lean Manufacturing, Quality Systems and Data Analytics.",
+    "Comprehensive knowledge of solar module manufacturing processes including greenfield projects, commissioning, production ramp up, Lean Manufacturing, Quality Systems and Data Analytics.",
 
     "Experienced in leading large manufacturing teams, improving productivity, optimizing cost and implementing sustainable operational improvements."
   ],
 
   about:
-    "I am a manufacturing operations leader with 10 years of experience in the solar module manufacturing industry, currently overseeing a 1.2 GW production line at ACME Solar while contributing to a 3 GW expansion project. My career has been built across every level, from a Graduate Engineer Trainee commissioning a 1.2 GW line, to a Manager driving strategy for gigawatt-scale operations.",
+    "I am a manufacturing operations leader with 10 years of experience in the solar module manufacturing industry, currently overseeing a 1.2 GW production line at ACME Solar while contributing to a 3 GW expansion project. My career has been built across every level, from a Graduate Engineer Trainee commissioning a 1.2 GW line, to a Manager driving strategy for gigawatt scale operations.",
 
   image: profileImage,
 
@@ -45,7 +45,7 @@ export const profile = {
 
   location: "India",
 
-  linkedin: "https://www.linkedin.com/in/imarmik-korat",
+  linkedin: "https://www.linkedin.com/in/marmik-korat",
 
   resume: `${import.meta.env.BASE_URL}marmik-korat-resume.pdf`
 };
@@ -73,7 +73,7 @@ export const experience = [
     points: [
       "Overseeing operations of a 1.2 GW solar module manufacturing line, ensuring optimal performance and production targets.",
       "Dedicatedly contributing from an operations standpoint to the 3 GW module line expansion project.",
-      "Working on capacity expansion projects for the existing plant to enhance output and operational efficiency."
+      "Working on the automation, digitization and capacity expansion projects to enhance output and operational efficiency."
     ]
   },
   {
@@ -130,8 +130,8 @@ export const experience = [
     company: "Adani Solar",
     period: "Aug 2016 – Feb 2017",
     points: [
-      "Completed a 26-week extensive training program on Solar Manufacturing Processes during induction.",
-      "Worked with the Project and OEM teams on installation of machinery."
+      "Completed a 26 week extensive training program on Solar Manufacturing Processes during induction.",
+      "Worked with the Project and OEM teams on installation of india's first ever gigawatt scale module manufacturing plant."
     ]
   }
 ];
@@ -142,19 +142,19 @@ export const experience = [
 
 export const education = [
   {
-    degree: "Bachelor of Engineering — Electrical Engineering",
+    degree: "Bachelor of Engineering : Electrical Engineering",
     institute: "Shantilal Shah Engineering College, Bhavnagar",
-    period: "Jun 2012 – May 2016"
+    period: "Jun 2012 - May 2016"
   },
   {
-    degree: "Young Leader's Program — Executive Education by Adani Group",
+    degree: "Young Leader's Program : Executive Education by Adani Group",
     institute: "Indian Institute of Management, Udaipur",
     period: "Jul 2024"
   },
   {
     degree: "Solar PV Manufacturing Processes",
     institute: "Adani Power Training & Research Institute (APTRI)",
-    period: "Aug 2016 – Feb 2017"
+    period: "Aug 2016 - Feb 2017"
   }
 ];
 
