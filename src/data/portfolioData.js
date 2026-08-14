@@ -258,7 +258,7 @@ export const achievements = [
   {
     title: "Green Urja & Energy Efficiency Award 2025",
     description:
-      "Received the prestigious Green Urja & Energy Efficiency Award, presented by the Indian Chamber of Commerce, for the Throughput Improvement Project.",
+      "Received the prestigious 5th Green Urja & Energy Efficiency Award, presented by the Indian Chamber of Commerce, for the Throughput Improvement Project.",
     image: achGreenUrja
   },
   {
