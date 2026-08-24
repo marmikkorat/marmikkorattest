@@ -56,9 +56,9 @@ export const profile = {
 
 export const stats = [
   { value: "10+", label: "Years of Experience" },
-  { value: "4.2 GW", label: "Cumulative Manufacturing Capacity Led" },
-  { value: "440+", label: "Team Members Led" },
-  { value: "3", label: "Major Industry Awards" }
+  { value: "2.5 GW", label: "Manufacturing Capacity Led" },
+  { value: "550+", label: "Team Members Led" },
+  { value: "3", label: "Major Industry Recognition" }
 ];
 
 // ----------------------------
@@ -143,12 +143,12 @@ export const experience = [
 export const education = [
   {
     degree: "Bachelor of Engineering : Electrical Engineering",
-    institute: "Shantilal Shah Engineering College, Bhavnagar",
+    institute: "Gujarat Technological University",
     period: "Jun 2012 - May 2016"
   },
   {
     degree: "Young Leader's Program : Executive Education by Adani Group",
-    institute: "Indian Institute of Management, Udaipur",
+    institute: "Indian Institute of Management - Udaipur",
     period: "Jul 2024"
   },
   {
