@@ -56,7 +56,7 @@ export const profile = {
 
 export const stats = [
   { value: "10+", label: "Years of Experience" },
-  { value: "4.2 GW", label: "Manufacturing Capacity Led" },
+  { value: "4.2 GW", label: "Cumulative Manufacturing Capacity Led" },
   { value: "440+", label: "Team Members Led" },
   { value: "3", label: "Major Industry Awards" }
 ];
