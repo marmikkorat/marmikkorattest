@@ -40,7 +40,7 @@ function About() {
 
             <p>
               My leadership philosophy focuses on building high-performance
-              teams while maintaining world-class standards in Safety, Quality,
+              teams while maintaining world class standards in Safety, Quality,
               Delivery, Cost and People Development.
             </p>
 
@@ -71,8 +71,8 @@ function About() {
               <h4>Lean Manufacturing</h4>
 
               <p>
-                Lean, Six Sigma, TPM, OEE improvement, Kaizen, Root Cause
-                Analysis, CAPA, SPC, FMEA and continuous improvement.
+                Lean, Six Sigma, OEE improvement, Kaizen, Root Cause
+                Analysis, CAPA, SPC and continuous improvement.
               </p>
 
             </Card>
